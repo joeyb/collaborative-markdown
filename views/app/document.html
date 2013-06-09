@@ -1,0 +1,16 @@
+<Body:>
+    <div class="row">
+        <div class="col col-lg-12">
+            <input type="text" value="{_page.document.title}" class="input-large"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col col-lg-6">
+            <textarea class="editor-column">{_page.document.markdown}</textarea>
+        </div>
+        <div class="col col-lg-6">
+            <div class="editor-column">
+                {unescaped marked(_page.document.markdown)}
+            </div>
+        </div>
+    </div>
